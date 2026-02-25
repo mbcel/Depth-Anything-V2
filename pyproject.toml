@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["depth_anything_v2*"]
+
+[project]
+name = "depth-anything-v2"
+version = "0.1.0"
+dependencies = [
+    "gradio_imageslider",
+    "gradio==4.29.0",
+    "matplotlib",
+    "opencv-python",
+]
